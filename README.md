@@ -207,7 +207,7 @@ scenario would be that IE would display the content area width as 160 pixels
 
 We don't have to worry about this display discrepancy often nowadays (although
 if you ever see IE-specific values in older CSS, you'll know that this is why!),
-but some would aruge that IE's approach to the box model made more sense. We can
+but some would argue that IE's approach to the box model made more sense. We can
 now replicate it with the `box-sizing` property.
 
 The `content-box` value instructs the element to use the default box model,
