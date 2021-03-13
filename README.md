@@ -192,7 +192,7 @@ our element will take up on the screen is 242px (200px + 20px on the right side
 To get a sense for how these properties work in real time, you can play around
 with them here:
 
-<script async src="//jsfiddle.net/flatiron_school/jtFgzembed/"></script>
+[JS Fiddle](jsfiddle.net/flatiron_school/jtFgz)
 
 ### Legacy Browser Display and `box-sizing`
 
@@ -256,7 +256,7 @@ article {
 
 You can see these principles in action over here:
 
-<script async src="//jsfiddle.net/flatiron_school/sFfw5embed/"></script>
+[JS Fiddle](jsfiddle.net/flatiron_school/sFfw5)
 
 ## Display
 
@@ -285,7 +285,7 @@ these display properties don't allow margins in between elements.
 You can experiment with all of these properties, and see all their pros and cons
 here:
 
-<script async src="//jsfiddle.net/flatiron_school/352A6/1embed/"></script>
+[JS Fiddle](jsfiddle.net/flatiron_school/352A6/1)
 
 ## Conclusion
 
