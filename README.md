@@ -248,10 +248,10 @@ property.
 
 ```css
 article {
-  overflow: visible; // This is the default setting and allows the content to, well, flow over.
-  overflow: hidden; // This will cut off and hide any content that flows outside the box.
-  overflow: scroll; // This will give the box its own scrollbar.
-  overflow: auto; // This detects the size of the content and creates a scrollbar if necessary.
+  overflow: visible; /* This is the default setting and allows the content to, well, flow over. */
+  overflow: hidden; /* This will cut off and hide any content that flows outside the box. */
+  overflow: scroll; /* This will give the box its own scrollbar. */
+  overflow: auto; /* This detects the size of the content and creates a scrollbar if necessary. */
 }
 ```
 
