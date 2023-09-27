@@ -241,8 +241,8 @@ article {
 ## Overflow
 
 When working with boxes and containers, you might find that the content inside
-doesn't follow the rules you thought made for it to follow. For example, you set
-a height of 500px on your element, but the text inside of the box stretches
+doesn't follow the rules you thought you made for it to follow. For example, you
+set a height of 500px on your element, but the text inside of the box stretches
 beyond the box's boundaries. This is where you need to turn to the `overflow`
 property.
 
