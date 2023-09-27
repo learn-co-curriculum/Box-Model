@@ -72,7 +72,7 @@ article {
 ```
 
 A note on setting padding and margin around all four sides of the element
-"box"—you can use the same value to apply equally on the top, right, bottom and
+"box": you can use the same value to apply equally on the top, right, bottom and
 left sides or you can set different values for each side. In the example above,
 we only wrote a single `20px` as the value for both the padding and margin. That
 means the browser will display the same amount of space around each side of the
@@ -165,6 +165,7 @@ article {
   border-left: 2px solid #666;
 }
 ```
+
 Or you can even set the property for each side individually!
 
 ```css
@@ -223,7 +224,7 @@ article {
 }
 ```
 
-The `border-box` value, on the other hand, will calcuate the width including the
+The `border-box` value, on the other hand, will calculate the width including the
 content, padding and border, but not the margin. So this CSS:
 
 ```css
