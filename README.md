@@ -1,18 +1,18 @@
 # The Box Model
 
-## Problem Statement
+## Learning Goals
+
+- Identify the parts of the box model
+- Explore the box model properties
+- Identify `overflow` properties
+- Identify `display` properties
+
+## Introduction
 
 Once we begin using CSS to put elements where we want them on the page, we need
 to know how the browser is going to interpret our code and how our page is
 ultimately going to display. Understanding the box model will give us a solid
 foundation for working with this process.
-
-### Objectives
-
-1. Identify the parts of the box model
-2. Explore the box model properties
-3. Identify `overflow` properties
-4. Identify `display` properties
 
 ## Identify the Box Model
 
@@ -34,7 +34,7 @@ together to determine the true size of an element on the page.
 
 Setting the width and height of an element will affect its content area size.
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -49,7 +49,7 @@ padding and margin will increase the element's overall size.
 Padding creates more space between the content of an element and the element's
 border.
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -62,7 +62,7 @@ article {
 Margin creates more space between the element and the other elements around it
 on the page.
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -81,7 +81,7 @@ element.
 If we want different amounts of padding or margin, we can set the top and bottom
 and the right and left with two corresponding values:
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -97,7 +97,7 @@ and 40 pixels of margin on the right and the left.
 We can also set each side's value individually, moving clockwise around the box
 model:
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -111,7 +111,7 @@ right, 30 pixels on the bottom and 40 pixels on the left.
 
 You can also set each side's value as its own property:
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -133,7 +133,7 @@ but you can also determine its color and style.
 
 Typically you will see border properties combined on a single line like this:
 
-```
+```css
 article {
   width: 200px;
   height: 200px;
@@ -147,7 +147,7 @@ Here we set our element border to one pixel, as a solid line, in black. For more
 control over each of these elements, you can also break them out into their own
 specific properties:
 
-```
+```css
 article {
   border-width: 1px;
   border-style: solid;
@@ -157,7 +157,7 @@ article {
 
 You can also set each border's side individually:
 
-```
+```css
 article {
   border-top: 1px solid #000;
   border-right: 2px solid #666;
@@ -167,7 +167,7 @@ article {
 ```
 Or you can even set the property for each side individually!
 
-```
+```css
 article {
   border-top-width: 1px;
   border-right-width: 2px;
@@ -214,7 +214,7 @@ The `content-box` value instructs the element to use the default box model,
 which is the behavior we described first. The padding and border values will be
 added to the specified width, to create an element with the total size of 242px.
 
-```
+```css
 article {
   box-sizing: content-box;
   width: 200px;
@@ -226,7 +226,7 @@ article {
 The `border-box` value, on the other hand, will calcuate the width including the
 content, padding and border, but not the margin. So this CSS:
 
-```
+```css
 article {
   box-sizing: border-box;
   width: 200px;
@@ -245,7 +245,7 @@ a height of 500px on your element, but the text inside of the box stretches
 beyond the box's boundaries. This is where you need to turn to the `overflow`
 property.
 
-```
+```css
 article {
   overflow: visible; // This is the default setting and allows the content to, well, flow over.
   overflow: hidden; // This will cut off and hide any content that flows outside the box.
@@ -299,8 +299,8 @@ on a page in layouts.
 
 ## Resources
 
-* [Mozilla Developer Network: Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
-* [CSS Tricks: The CSS Box Model](https://css-tricks.com/the-css-box-model/)
-* [Mozilla Developer Network: Box-Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
-* [CSS Tricks: Box-Sizing](https://css-tricks.com/box-sizing/)
-* [Video demonstration of the `display` property](https://www.youtube.com/embed/bKDs_FQkkEI)
+- [Mozilla Developer Network: Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
+- [CSS Tricks: The CSS Box Model](https://css-tricks.com/the-css-box-model/)
+- [Mozilla Developer Network: Box-Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+- [CSS Tricks: Box-Sizing](https://css-tricks.com/box-sizing/)
+- [Video demonstration of the `display` property](https://www.youtube.com/embed/bKDs_FQkkEI)
