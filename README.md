@@ -38,7 +38,7 @@ Setting the width and height of an element will affect its content area size.
 article {
   width: 200px;
   height: 200px;
-  }
+}
 ```
 
 Notice that the width and height applies to the content size only. Adding
@@ -71,10 +71,10 @@ article {
 }
 ```
 
-A note on setting padding and margin around all four sides of the element
-"box": you can use the same value to apply equally on the top, right, bottom and
-left sides or you can set different values for each side. In the example above,
-we only wrote a single `20px` as the value for both the padding and margin. That
+A note on setting padding and margin around all four sides of the element "box":
+you can use the same value to apply equally on the top, right, bottom and left
+sides or you can set different values for each side. In the example above, we
+only wrote a single `20px` as the value for both the padding and margin. That
 means the browser will display the same amount of space around each side of the
 element.
 
@@ -187,8 +187,9 @@ Something else to note: remember when we said that all of these properties go
 together to make the true size of the element? That means if we set our width as
 200px and our margin as 20px on each side, plus a 1px border, the total width
 our element will take up on the screen is 242px (200px + 20px on the right side
-+ 20px on the left side + 1px border on the right + 1px border on the left =
-242px). Keep that in mind when you determine what sizes you want.
+
+- 20px on the left side + 1px border on the right + 1px border on the left =
+  242px). Keep that in mind when you determine what sizes you want.
 
 To get a sense for how these properties work in real time, you can play around
 with them here:
@@ -224,8 +225,8 @@ article {
 }
 ```
 
-The `border-box` value, on the other hand, will calculate the width including the
-content, padding and border, but not the margin. So this CSS:
+The `border-box` value, on the other hand, will calculate the width including
+the content, padding and border, but not the margin. So this CSS:
 
 ```css
 article {
@@ -237,6 +238,12 @@ article {
 ```
 
 ... will result in an element with a total width of 158px.
+
+Generally, we want to use the `border-box` value since it makes it much easier
+to work with other CSS properties. You would apply this to all elements before
+applying any other rules. Check out
+[this modern CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/) for
+more guidance.
 
 ## Overflow
 
@@ -305,3 +312,4 @@ on a page in layouts.
 - [Mozilla Developer Network: Box-Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 - [CSS Tricks: Box-Sizing](https://css-tricks.com/box-sizing/)
 - [Video demonstration of the `display` property](https://www.youtube.com/embed/bKDs_FQkkEI)
+- [Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
